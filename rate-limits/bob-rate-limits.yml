@@ -1,0 +1,48 @@
+name: HiBob API Rate Limits
+description: >-
+  HiBob enforces per-endpoint rate limits on the Bob API. Rate limits vary by
+  endpoint; the People Search endpoint has a documented limit of 50 requests per
+  minute. Responses include standard rate-limit headers to enable adaptive
+  throttling. Exceeding limits returns HTTP 429. Infrastructure-level WAF
+  protections block IPs with excessive authentication failures.
+url: https://apidocs.hibob.com/reference/rate-limiting
+created: '2026-06-13'
+modified: '2026-06-13'
+limits:
+  - endpoint: /v1/people/search
+    method: POST
+    requestsPerMinute: 50
+    description: >-
+      The People Search endpoint is rate-limited to 50 requests per minute.
+      Use bulk search over repeated single-record calls to reduce pressure.
+  - endpoint: all
+    description: >-
+      General rate limits apply across all endpoints. Exact thresholds per
+      endpoint are not publicly published but are enforced. Implement
+      exponential backoff on 429 responses.
+headers:
+  - name: X-RateLimit-Limit
+    description: The total number of requests allowed within the current time window
+  - name: X-RateLimit-Remaining
+    description: The number of requests remaining in the current rate limit window
+  - name: X-RateLimit-Reset
+    description: Unix epoch time when the rate limit window resets
+statusCodes:
+  - code: 429
+    meaning: Too Many Requests — rate limit exceeded; pause until X-RateLimit-Reset
+  - code: 401
+    meaning: Unauthorized — do not retry; verify credentials
+  - code: 403
+    meaning: Forbidden — do not retry; verify permissions
+wafProtections:
+  - trigger: 50+ requests with HTTP 401 from the same IP within 10 seconds
+    action: IP blocked for 5 minutes
+  - trigger: 50+ requests with HTTP 401 from the same Authorization header within 10 seconds
+    action: Authorization header blocked for 5 minutes
+  - trigger: 50+ requests with HTTP 403 from the same Authorization header within 10 seconds
+    action: Authorization header blocked for 5 minutes
+retryGuidance:
+  - Check X-RateLimit-Reset header and pause requests until that time
+  - Implement exponential backoff with jitter on 429 responses
+  - Prefer bulk endpoints (e.g., POST /people/search) over repeated single-record calls
+  - Never retry 401 or 403 responses without first fixing credentials or permissions

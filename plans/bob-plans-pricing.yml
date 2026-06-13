@@ -1,0 +1,89 @@
+name: HiBob Plans and Pricing
+description: >-
+  HiBob pricing is module-based rather than tiered. All customers receive a core
+  HR platform and then select add-on modules. Pricing is quoted per employee per
+  month (PEPM) and depends on company size, selected modules, and contract length.
+  HiBob does not publish a public pricing page with fixed rates; quotes are
+  provided via sales engagement.
+url: https://www.hibob.com/pricing/
+created: '2026-06-13'
+modified: '2026-06-13'
+plans:
+  - name: Core Platform
+    description: >-
+      Base HR platform including employee profiles, org charts, time-off
+      tracking, onboarding, document management, and basic analytics.
+    pricePerEmployeeMonthLow: 16
+    pricePerEmployeeMonthHigh: 25
+    currency: USD
+    billingPeriod: monthly
+    contractOptions:
+      - term: annual
+        description: Standard 12-month annual contract at baseline pricing
+      - term: 24-month
+        discount: 15-20%
+        description: Estimated 15-20% savings vs. annual
+      - term: 36-month
+        discount: 35%
+        description: 35% discount available on multi-year commitments
+    features:
+      - Employee profiles
+      - Org charts
+      - Time-off tracking
+      - Onboarding workflows
+      - Document management
+      - Basic analytics
+  - name: Core + Performance Management
+    description: Adds goal tracking, 360 feedback, review cycles, and continuous performance conversations.
+    additionalPEPM: 3-5
+    currency: USD
+    features:
+      - Goal tracking (OKRs)
+      - 360-degree feedback
+      - Review cycles
+      - Continuous performance conversations
+  - name: Core + Engagement and Culture
+    description: Adds pulse surveys, eNPS measurement, sentiment analysis, and anonymous feedback.
+    additionalPEPM: 1-2
+    currency: USD
+    features:
+      - Pulse surveys
+      - eNPS measurement
+      - Sentiment analysis
+      - Anonymous feedback
+  - name: Core + Compensation Management
+    description: Adds salary planning, merit modeling, and pay equity analysis.
+    additionalPEPM: 3-5
+    currency: USD
+    features:
+      - Salary planning
+      - Merit modeling
+      - Pay equity analysis
+  - name: Complete Platform
+    description: All modules combined into a full HR management suite.
+    pricePerEmployeeMonthLow: 24
+    pricePerEmployeeMonthHigh: 35
+    currency: USD
+    features:
+      - All Core features
+      - Performance management
+      - Engagement and culture tools
+      - Compensation management
+      - Workforce planning
+      - Hiring (ATS)
+      - Learning (LMS)
+      - Payroll Hub
+additionalCosts:
+  - name: Implementation Fee
+    description: Configuration, data migration, training, and go-live support (4-8 weeks)
+    amount: 10-20% of first-year contract value
+  - name: Payroll Integration
+    description: >-
+      Native payroll is not included; requires third-party integration
+      (ADP, Paylocity, Trinet, etc.)
+    additionalPEPM: 6-12
+    currency: USD
+notes:
+  - Renewal price increases average approximately 20% based on user reports
+  - All pricing is custom-quoted; contact sales for exact figures
+  - API access is included with any HiBob subscription

@@ -1,0 +1,94 @@
+name: HiBob FinOps
+description: >-
+  Financial operations guidance for managing HiBob API consumption costs.
+  HiBob charges per employee per month (PEPM) as a SaaS platform; API access
+  is included in any subscription. Cost drivers include number of employees
+  managed, add-on modules selected, contract length, implementation fees, and
+  third-party payroll integration costs.
+url: https://www.hibob.com/pricing/
+created: '2026-06-13'
+modified: '2026-06-13'
+costModel:
+  type: per-employee-per-month
+  description: >-
+    HiBob prices based on total headcount managed in the platform plus optional
+    add-on modules. API usage does not incur additional per-call charges beyond
+    the base subscription. All pricing requires custom quoting through sales.
+  baseRangePerEmployeeMonth:
+    low: 16
+    high: 25
+    currency: USD
+    notes: Core platform only; add-ons increase PEPM
+costDrivers:
+  - name: Employee Headcount
+    description: >-
+      Total number of active employees managed in Bob. The primary cost lever;
+      every seat added increases the monthly bill. Audit and deprovision
+      off-boarded employees promptly.
+    impact: high
+  - name: Add-On Modules
+    description: >-
+      Each optional module (Performance, Engagement, Compensation, Payroll Hub,
+      Learning, Hiring) adds PEPM cost. Select only modules actively used.
+    impact: high
+  - name: Contract Length
+    description: >-
+      Longer commitments (24-36 months) yield 15-35% discounts. Evaluate
+      growth trajectory before committing to multi-year terms.
+    impact: medium
+  - name: Implementation Fees
+    description: >-
+      One-time cost of 10-20% of first-year contract value for onboarding.
+      Negotiate inclusion or reduction as part of contract discussions.
+    impact: medium
+  - name: Payroll Integration
+    description: >-
+      Native payroll not included; third-party integrations cost $6-12 PEPM
+      additional. Evaluate whether an existing payroll provider offers a
+      direct HiBob connector at lower cost.
+    impact: medium
+  - name: Renewal Price Increases
+    description: >-
+      Historical renewal increases average ~20%. Budget for this annually and
+      negotiate renewal terms in advance of contract end dates.
+    impact: medium
+optimizationStrategies:
+  - name: Right-size module selection
+    description: >-
+      Audit module usage quarterly. Remove or downgrade add-ons with low
+      adoption to reduce PEPM costs.
+  - name: Prompt employee deprovisioning
+    description: >-
+      Remove off-boarded employees from Bob immediately to avoid paying for
+      inactive seats. Automate via the DELETE /people/{id} API endpoint.
+  - name: Negotiate multi-year discounts
+    description: >-
+      A 36-month commitment can unlock up to 35% discount. Model long-term
+      headcount growth before signing.
+  - name: Bundle payroll integration
+    description: >-
+      Negotiate payroll hub or integration costs into the base contract rather
+      than as a separate add-on.
+  - name: API bulk operations
+    description: >-
+      Use bulk API endpoints (e.g., POST /people/search) to reduce API call
+      volume and stay well within rate limits, avoiding retries that inflate
+      latency without adding cost but impacting developer productivity.
+  - name: Leverage sandbox environment
+    description: >-
+      Use HiBob Sandbox (available as an add-on) to test integrations without
+      affecting production data, avoiding costly mistakes that require
+      professional services to remediate.
+reporting:
+  - metric: Active employee seat count
+    frequency: monthly
+    action: Reconcile with HR records; deprovision inactive seats
+  - metric: Module adoption rate
+    frequency: quarterly
+    action: Remove underused add-on modules at renewal
+  - metric: API error rates (401/403)
+    frequency: continuous
+    action: Fix auth issues immediately to avoid WAF blocks
+  - metric: Contract renewal date
+    frequency: annually
+    action: Begin renegotiation 90 days before expiry
