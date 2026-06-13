@@ -1,0 +1,55 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "HiBob",
+  "alternateName": "Bob",
+  "description": "HiBob is a modern HR platform (known as Bob) offering a REST API for managing employee profiles, onboarding, time off, attendance, payroll integration, goals, documents, workforce planning, and company culture data.",
+  "url": "https://www.hibob.com/",
+  "sameAs": [
+    "https://twitter.com/HiBob_HR",
+    "https://www.linkedin.com/company/hibob",
+    "https://github.com/speakeasy-sdks/hibob"
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "HiBob API Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "HiBob Bob API",
+          "description": "REST API for the HiBob HR platform providing programmatic access to employee data, time off management, attendance, tasks, reports, documents, goals, job catalog, workforce planning, hiring, and learning modules.",
+          "url": "https://apidocs.hibob.com/docs/getting-started",
+          "category": [
+            "HR",
+            "Human Resources",
+            "HRIS",
+            "Employee Management",
+            "Time Off",
+            "Attendance",
+            "Workforce Planning"
+          ]
+        }
+      }
+    ]
+  },
+  "subjectOf": [
+    {
+      "@type": "TechArticle",
+      "name": "HiBob API Documentation",
+      "url": "https://apidocs.hibob.com/docs/getting-started"
+    }
+  ],
+  "provider": {
+    "@type": "APIReference",
+    "name": "Bob API",
+    "url": "https://apidocs.hibob.com/docs/getting-started",
+    "encodingFormat": "application/json",
+    "termsOfService": "https://apidocs.hibob.com/reference/rate-limiting"
+  },
+  "potentialAction": {
+    "@type": "ReadAction",
+    "target": "https://apidocs.hibob.com/docs/getting-started"
+  }
+}
