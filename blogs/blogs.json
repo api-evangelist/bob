@@ -2,7 +2,7 @@
   "provider": "bob",
   "name": "HiBob Blog",
   "url": "https://www.hibob.com/blog/",
-  "fetched": "2026-06-13",
+  "fetched": "2026-06-14T20:42:17Z",
   "posts": [
     {
       "title": "Why Canadian HR leaders are building stronger communities right now",
@@ -45,7 +45,7 @@
       "date": "2026-03-31"
     },
     {
-      "title": "Why HR–Finance alignment is how to win the next decade of work",
+      "title": "Why HR\u2013Finance alignment is how to win the next decade of work",
       "url": "https://www.hibob.com/blog/hr-finance-workforce-strategy/",
       "date": "2026-03-18"
     },
@@ -84,5 +84,13 @@
       "url": "https://www.hibob.com/blog/2025-people-first-business-impact-hibob/",
       "date": "2025-12-08"
     }
-  ]
+  ],
+  "repo": "bob",
+  "feeds": [
+    {
+      "source": "https://www.linkedin.com/company/hibob",
+      "error": "HTTPError"
+    }
+  ],
+  "post_count": 0
 }
