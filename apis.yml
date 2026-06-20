@@ -6,7 +6,7 @@ description: >-
   goals, documents, workforce planning, and company culture data. The API
   supports service user authentication and webhooks for event-driven integrations
   across HR workflows.
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 url: https://raw.githubusercontent.com/api-evangelist/bob/refs/heads/main/apis.yml
 created: '2026-06-13'
 modified: '2026-06-13'
@@ -32,7 +32,7 @@ apis:
       goals, job catalog, workforce planning, hiring, and learning modules.
       Authentication uses HTTP Basic Auth with Base64-encoded service user
       credentials.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://apidocs.hibob.com/docs/getting-started
     baseURL: https://api.hibob.com/v1
     tags:
