@@ -1,96 +1,14 @@
 {
-  "provider": "bob",
-  "name": "HiBob Blog",
-  "url": "https://www.hibob.com/blog/",
-  "fetched": "2026-06-14T20:42:17Z",
-  "posts": [
-    {
-      "title": "Why Canadian HR leaders are building stronger communities right now",
-      "url": "https://www.hibob.com/blog/canadian-hr-leaders-building-communities/",
-      "date": "2026-05-18"
-    },
-    {
-      "title": "What HiBob's Exemplary ISG rating means for modern HCMs",
-      "url": "https://www.hibob.com/blog/what-hibobs-exemplary-isg-rating-means-for-modern-hcms/",
-      "date": "2026-05-18"
-    },
-    {
-      "title": "The philosophy guiding AI at HiBob: Connecting people, data, and workflows",
-      "url": "https://www.hibob.com/blog/ai-in-hr-philosophy-hibob/",
-      "date": "2026-05-12"
-    },
-    {
-      "title": "EU pay transparency in the age of AI",
-      "url": "https://www.hibob.com/blog/pay-transparency-ai-compensation-strategy/",
-      "date": "2026-05-12"
-    },
-    {
-      "title": "How Bob's AI-powered Job Catalog is reshaping the foundations of HR",
-      "url": "https://www.hibob.com/blog/ai-powered-job-catalog/",
-      "date": "2026-05-03"
-    },
-    {
-      "title": "How Bob AI adds real value to everyday workflows",
-      "url": "https://www.hibob.com/blog/value-bob-ai/",
-      "date": "2026-04-20"
-    },
-    {
-      "title": "Can AI tools replace your HRIS?",
-      "url": "https://www.hibob.com/blog/can-ai-tools-replace-your-hris/",
-      "date": "2026-04-16"
-    },
-    {
-      "title": "AI in HR is changing. Here's what the market is recognizing.",
-      "url": "https://www.hibob.com/blog/ai-hr-changing/",
-      "date": "2026-03-31"
-    },
-    {
-      "title": "Why HR\u2013Finance alignment is how to win the next decade of work",
-      "url": "https://www.hibob.com/blog/hr-finance-workforce-strategy/",
-      "date": "2026-03-18"
-    },
-    {
-      "title": "Women in the workplace 2026: Building systems that support gender equity",
-      "url": "https://www.hibob.com/blog/women-in-the-workplace-report-2026-international-womens-day/",
-      "date": "2026-03-10"
-    },
-    {
-      "title": "Built on Bob: How HR and Finance alignment gets built in practice",
-      "url": "https://www.hibob.com/blog/how-sansa-helps-hr-finance-connect/",
-      "date": "2026-03-04"
-    },
-    {
-      "title": "AI transformation is a people journey, not a tech rollout",
-      "url": "https://www.hibob.com/blog/ai-transformation-is-a-people-journey-not-a-tech-rollout/",
-      "date": "2026-02-24"
-    },
-    {
-      "title": "Why HR and Finance perform better together",
-      "url": "https://www.hibob.com/blog/bridge-hr-finance-gap/",
-      "date": "2026-02-24"
-    },
-    {
-      "title": "Why AI adoption succeeds or fails long before the technology does",
-      "url": "https://www.hibob.com/blog/scaling-ai-adoption-hr/",
-      "date": "2026-02-10"
-    },
-    {
-      "title": "AI transformation doesn't start with technology. It starts with managers.",
-      "url": "https://www.hibob.com/blog/ai-mind-talks-ronni-zehavi-future-of-work/",
-      "date": "2026-01-13"
-    },
-    {
-      "title": "HiBob's defining year for people-first business impact",
-      "url": "https://www.hibob.com/blog/2025-people-first-business-impact-hibob/",
-      "date": "2025-12-08"
-    }
-  ],
   "repo": "bob",
   "feeds": [
     {
-      "source": "https://www.linkedin.com/company/hibob",
-      "error": "HTTPError"
+      "source": "https://www.hibob.com/blog/",
+      "feed_url": "",
+      "saved": 2,
+      "method": "agent-scrape"
     }
   ],
-  "post_count": 0
+  "fetched": "2026-06-27T12:28:16Z",
+  "post_count": 3,
+  "agent_pulled": "2026-06-27"
 }
