@@ -49,6 +49,8 @@ apis:
       - type: RateLimits
         url: https://apidocs.hibob.com/reference/rate-limiting
 common:
+  - type: DomainSecurity
+    url: security/bob-domain-security.yml
   - type: Website
     url: https://www.hibob.com/
   - type: Documentation
