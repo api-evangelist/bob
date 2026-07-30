@@ -6,7 +6,19 @@ description: >-
   goals, documents, workforce planning, and company culture data. The API
   supports service user authentication and webhooks for event-driven integrations
   across HR workflows.
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source:
+  - plans
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/bob.png
 url: https://raw.githubusercontent.com/api-evangelist/bob/refs/heads/main/apis.yml
 created: '2026-06-13'
 modified: '2026-06-13'
