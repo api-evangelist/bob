@@ -6,6 +6,17 @@ description: >-
   goals, documents, workforce planning, and company culture data. The API
   supports service user authentication and webhooks for event-driven integrations
   across HR workflows.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
