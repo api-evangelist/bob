@@ -42,28 +42,11 @@ tags:
 - Goals
 - OKR
 apis:
-- aid: bob:bob-api
-  name: HiBob Bob API
-  description: REST API for the HiBob HR platform providing programmatic access to employee data, time off management, attendance, tasks, reports, documents, goals, job catalog, workforce planning, hiring, and learning modules. Authentication uses HTTP Basic Auth with Base64-encoded service user credentials.
-  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
-  humanURL: https://apidocs.hibob.com/docs/getting-started
-  baseURL: https://api.hibob.com/v1
-  tags:
-  - HR
-  - Employee Management
-  - Time Off
-  - Attendance
-  - Workforce Planning
-  properties:
-  - type: Documentation
-    url: https://apidocs.hibob.com/docs/getting-started
-  - type: OpenAPI
-    url: https://apidocs.hibob.com/llms.txt
-  - type: RateLimits
-    url: https://apidocs.hibob.com/reference/rate-limiting
 - aid: bob:public-api
   name: Bob Public API
-  description: REST API for managing employee data, time off, tasks, documents, and lifecycle events in HiBob. Authentication uses HTTP Basic with an API service user ID and token (Base64-encoded).
+  description: >-
+    REST API for managing employee data, time off, tasks, documents, and lifecycle events in HiBob. Authentication
+    uses HTTP Basic with an API service user ID and token (Base64-encoded).
   humanURL: https://apidocs.hibob.com/
   baseURL: https://api.hibob.com/v1
   tags:
@@ -85,7 +68,9 @@ apis:
     url: https://apidocs.hibob.com/reference/authorization
 - aid: bob:webhooks
   name: Bob Webhooks
-  description: Webhooks for receiving real-time notifications of employee lifecycle and data change events from HiBob to drive downstream automation.
+  description: >-
+    Webhooks for receiving real-time notifications of employee lifecycle and data change events from HiBob
+    to drive downstream automation.
   humanURL: https://apidocs.hibob.com/docs/webhooks
   baseURL: https://apidocs.hibob.com/docs/webhooks
   tags:
@@ -97,88 +82,118 @@ apis:
   properties:
   - type: Documentation
     url: https://apidocs.hibob.com/docs/webhooks
-- aid: bob:hibob-attendance-api
+- aid: bob:bob-attendance-api
   name: HiBob Attendance API
   description: The Attendance API from HiBob — 4 operation(s) for attendance.
-  humanURL: https://apidocs.hibob.com/
+  humanURL: https://apidocs.hibob.com/docs/getting-started
   baseURL: https://api.hibob.com/v1
   tags:
   - Attendance
   properties:
   - type: OpenAPI
-    url: openapi/hibob-attendance-api-openapi.yml
-- aid: bob:hibob-documents-api
+    url: openapi/bob-attendance-api-openapi.yml
+  - type: Documentation
+    url: https://apidocs.hibob.com/docs/getting-started
+  - type: RateLimits
+    url: https://apidocs.hibob.com/reference/rate-limiting
+- aid: bob:bob-documents-api
   name: HiBob Documents API
   description: The Documents API from HiBob — 3 operation(s) for documents.
-  humanURL: https://apidocs.hibob.com/
+  humanURL: https://apidocs.hibob.com/docs/getting-started
   baseURL: https://api.hibob.com/v1
   tags:
   - Documents
   properties:
   - type: OpenAPI
-    url: openapi/hibob-documents-api-openapi.yml
-- aid: bob:hibob-employee-tables-api
+    url: openapi/bob-documents-api-openapi.yml
+  - type: Documentation
+    url: https://apidocs.hibob.com/docs/getting-started
+  - type: RateLimits
+    url: https://apidocs.hibob.com/reference/rate-limiting
+- aid: bob:bob-employee-tables-api
   name: HiBob Employee Tables API
   description: The Employee Tables API from HiBob — 4 operation(s) for employee tables.
-  humanURL: https://apidocs.hibob.com/
+  humanURL: https://apidocs.hibob.com/docs/getting-started
   baseURL: https://api.hibob.com/v1
   tags:
   - Employee Tables
   properties:
   - type: OpenAPI
-    url: openapi/hibob-employee-tables-api-openapi.yml
-- aid: bob:hibob-goals-api
+    url: openapi/bob-employee-tables-api-openapi.yml
+  - type: Documentation
+    url: https://apidocs.hibob.com/docs/getting-started
+  - type: RateLimits
+    url: https://apidocs.hibob.com/reference/rate-limiting
+- aid: bob:bob-goals-api
   name: HiBob Goals API
   description: The Goals API from HiBob — 3 operation(s) for goals.
-  humanURL: https://apidocs.hibob.com/
+  humanURL: https://apidocs.hibob.com/docs/getting-started
   baseURL: https://api.hibob.com/v1
   tags:
   - Goals
   properties:
   - type: OpenAPI
-    url: openapi/hibob-goals-api-openapi.yml
-- aid: bob:hibob-hiring-api
+    url: openapi/bob-goals-api-openapi.yml
+  - type: Documentation
+    url: https://apidocs.hibob.com/docs/getting-started
+  - type: RateLimits
+    url: https://apidocs.hibob.com/reference/rate-limiting
+- aid: bob:bob-hiring-api
   name: HiBob Hiring API
   description: The Hiring API from HiBob — 4 operation(s) for hiring.
-  humanURL: https://apidocs.hibob.com/
+  humanURL: https://apidocs.hibob.com/docs/getting-started
   baseURL: https://api.hibob.com/v1
   tags:
   - Hiring
   properties:
   - type: OpenAPI
-    url: openapi/hibob-hiring-api-openapi.yml
-- aid: bob:hibob-learning-api
+    url: openapi/bob-hiring-api-openapi.yml
+  - type: Documentation
+    url: https://apidocs.hibob.com/docs/getting-started
+  - type: RateLimits
+    url: https://apidocs.hibob.com/reference/rate-limiting
+- aid: bob:bob-learning-api
   name: HiBob Learning API
   description: The Learning API from HiBob — 2 operation(s) for learning.
-  humanURL: https://apidocs.hibob.com/
+  humanURL: https://apidocs.hibob.com/docs/getting-started
   baseURL: https://api.hibob.com/v1
   tags:
   - Learning
   properties:
   - type: OpenAPI
-    url: openapi/hibob-learning-api-openapi.yml
-- aid: bob:hibob-people-api
+    url: openapi/bob-learning-api-openapi.yml
+  - type: Documentation
+    url: https://apidocs.hibob.com/docs/getting-started
+  - type: RateLimits
+    url: https://apidocs.hibob.com/reference/rate-limiting
+- aid: bob:bob-people-api
   name: HiBob People API
   description: The People API from HiBob — 4 operation(s) for people.
-  humanURL: https://apidocs.hibob.com/
+  humanURL: https://apidocs.hibob.com/docs/getting-started
   baseURL: https://api.hibob.com/v1
   tags:
   - People
   properties:
   - type: OpenAPI
-    url: openapi/hibob-people-api-openapi.yml
-- aid: bob:hibob-projects-api
+    url: openapi/bob-people-api-openapi.yml
+  - type: Documentation
+    url: https://apidocs.hibob.com/docs/getting-started
+  - type: RateLimits
+    url: https://apidocs.hibob.com/reference/rate-limiting
+- aid: bob:bob-projects-api
   name: HiBob Projects API
   description: The Projects API from HiBob — 3 operation(s) for projects.
-  humanURL: https://apidocs.hibob.com/
+  humanURL: https://apidocs.hibob.com/docs/getting-started
   baseURL: https://api.hibob.com/v1
   tags:
-  - Project
-  tags_raw:
   - Projects
   properties:
   - type: OpenAPI
-    url: openapi/hibob-projects-api-openapi.yml
+    url: openapi/bob-projects-api-openapi.yml
+  - type: Documentation
+    url: https://apidocs.hibob.com/docs/getting-started
+  - type: RateLimits
+    url: https://apidocs.hibob.com/reference/rate-limiting
 common:
 - type: DomainSecurity
   url: security/bob-domain-security.yml
