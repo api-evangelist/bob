@@ -30,6 +30,17 @@ created: '2026-06-13'
 modified: '2026-06-13'
 specificationVersion: '0.23'
 tags:
+- Human Resources
+- HRIS
+- Employee Management
+- Time Off
+- Attendance
+- Payroll
+- Workforce Planning
+- Onboarding
+- Goals
+- OKRs
+tags_raw:
 - HR
 - Human Resources
 - HRIS
@@ -186,6 +197,8 @@ apis:
   humanURL: https://apidocs.hibob.com/docs/getting-started
   baseURL: https://api.hibob.com/v1
   tags:
+  - Project
+  tags_raw:
   - Projects
   properties:
   - type: OpenAPI
