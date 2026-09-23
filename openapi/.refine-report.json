@@ -1,0 +1,40 @@
+{
+  "provider": "bob",
+  "sources": [
+    "_original/hibob-attendance-api-openapi.yml",
+    "_original/hibob-documents-api-openapi.yml",
+    "_original/hibob-employee-tables-api-openapi.yml",
+    "_original/hibob-goals-api-openapi.yml",
+    "_original/hibob-hiring-api-openapi.yml",
+    "_original/hibob-learning-api-openapi.yml",
+    "_original/hibob-people-api-openapi.yml",
+    "_original/hibob-projects-api-openapi.yml"
+  ],
+  "outputs": [
+    "bob-attendance-api-openapi.yml",
+    "bob-documents-api-openapi.yml",
+    "bob-employee-tables-api-openapi.yml",
+    "bob-goals-api-openapi.yml",
+    "bob-hiring-api-openapi.yml",
+    "bob-learning-api-openapi.yml",
+    "bob-people-api-openapi.yml",
+    "bob-projects-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [
+    "sourced from openapi/_original/ (8 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "apis.yml register: already-registered"
+  ],
+  "skipped": [
+    "bob-attendance-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "bob-documents-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "bob-employee-tables-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "bob-goals-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "bob-hiring-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "bob-learning-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "bob-people-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "bob-projects-api-openapi.yml: previously refined output, superseded by openapi/_original/"
+  ]
+}
