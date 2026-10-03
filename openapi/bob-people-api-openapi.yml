@@ -114,6 +114,13 @@ paths:
       operationId: getProfiles
       x-operation-id-source: derived
 components:
+  parameters:
+    Identifier:
+      name: identifier
+      in: path
+      required: true
+      schema:
+        type: string
   schemas:
     Employee:
       type: object
@@ -128,13 +135,6 @@ components:
           type: string
         displayName:
           type: string
-  parameters:
-    Identifier:
-      name: identifier
-      in: path
-      required: true
-      schema:
-        type: string
   securitySchemes:
     serviceUserAuth:
       type: http
