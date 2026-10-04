@@ -1,0 +1,79 @@
+slug: bob
+provider: HiBob
+generated_by: planning/capability-mapping/scripts/classify_capabilities.py
+model: claude-opus-5
+frame:
+- Software & Technology
+min_confidence: 0.7
+capability_model:
+  source: https://github.com/vincentmakes/turbo-ea-capabilities
+  license: CC-BY-4.0
+  attribution: Turbo EA Capabilities by Vincent Verdet — Turbo EA, https://github.com/vincentmakes/turbo-ea-capabilities,
+    CC BY 4.0
+  notice: NOTICE
+edge_count: 7
+edges:
+- tag: Hiring
+  spec_file: bob-hiring-api-openapi.yml
+  capability_id: BC-300.10
+  capability_id_l1: BC-300
+  capability_name: Talent Acquisition Management
+  confidence: 0.95
+  evidence: Search candidates; Search job openings; Retrieve active career page job ads
+  reason: Candidate, application and job-opening operations are talent acquisition.
+- tag: Employee Tables
+  spec_file: bob-employee-tables-api-openapi.yml
+  capability_id: BC-300.70
+  capability_id_l1: BC-300
+  capability_name: HR Operations Management
+  confidence: 0.85
+  evidence: GET /people/{id}/employment List employment history; GET /people/{id}/salaries List employee's
+    salary history; POST /people/{id}/bank-accounts Create bank account entry
+  reason: Employee record tables (employment, salary, work history, bank accounts) are core HR operations
+    / employee records administration.
+- tag: Learning
+  spec_file: bob-learning-api-openapi.yml
+  capability_id: BC-300.40
+  capability_id_l1: BC-300
+  capability_name: Learning & Development Management
+  confidence: 0.85
+  evidence: POST /learning/lms-integrations Create LMS integration; POST .../training-content Create training
+    content
+  reason: LMS integration and training content creation realise learning & development administration.
+- tag: People
+  spec_file: bob-people-api-openapi.yml
+  capability_id: BC-300.70
+  capability_id_l1: BC-300
+  capability_name: HR Operations Management
+  confidence: 0.85
+  evidence: POST /people Create employee; PUT /people/{identifier} Update employee; schema Employee
+  reason: Employee master record CRUD in an HR platform is HR operations / employee records.
+- tag: Attendance
+  spec_file: bob-attendance-api-openapi.yml
+  capability_id: BC-300.70
+  capability_id_l1: BC-300
+  capability_name: HR Operations Management
+  confidence: 0.8
+  evidence: POST /attendance/entries 'Bulk create attendance entries'; PATCH /attendance/employees/{employeeId}/entries
+    'Update entries'; schema AttendanceEntry
+  reason: Employee attendance (time) entry capture and maintenance on an HR platform — HR operational
+    record-keeping that feeds payroll administration, so HR Operations Management under Human Capital
+    Management.
+- tag: Documents
+  spec_file: bob-documents-api-openapi.yml
+  capability_id: BC-300.70
+  capability_id_l1: BC-300
+  capability_name: HR Operations Management
+  confidence: 0.8
+  evidence: POST /docs/people/{id}/confidential 'Upload file to confidential folder'; GET /docs/people/{id}
+    'Download list of documents of an employee'
+  reason: Document storage and retrieval attached to employee records on an HR platform — employee personnel-file
+    management, which sits in HR Operations Management rather than generic content or knowledge management.
+- tag: Goals
+  spec_file: bob-goals-api-openapi.yml
+  capability_id: BC-300.20
+  capability_id_l1: BC-300
+  capability_name: Talent Management
+  confidence: 0.8
+  evidence: POST /goals/goals Create goals; PATCH /goals/goals/{goalId} Update goal; schema Goal
+  reason: Employee goal management within an HR platform is performance/talent management.
