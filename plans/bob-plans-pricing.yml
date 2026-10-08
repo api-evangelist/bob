@@ -92,3 +92,39 @@ notes:
   - Renewal price increases average approximately 20% based on user reports
   - All pricing is custom-quoted; contact sales for exact figures
   - API access is included with any HiBob subscription
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models: []
+  units: []
+  plans:
+  - name: Core Platform
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods: []
+  - name: Core + Performance Management
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods: []
+  - name: Core + Engagement and Culture
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods: []
+  - name: Core + Compensation Management
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods: []
+  - name: Complete Platform
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods: []
