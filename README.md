@@ -1,4 +1,4 @@
-# HiBob (bob)
+# HiBob
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,65 +66,112 @@
 
 HiBob is a modern HR platform (known as Bob) offering a REST API for managing employee profiles, onboarding, time off, attendance, payroll integration, goals, documents, workforce planning, and company culture data. The API supports service user authentication and webhooks for event-driven integrations across HR workflows.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/bob/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/bob/refs/heads/main/apis.yml)
+**Areas:** Human Resources · HRIS · Employee Management · Time Off · Attendance · Payroll · Workforce Planning · Onboarding · Goals · OKRs
 
-## Tags
+## HiBob on APIs.io
 
-- HR
-- Human Resources
-- HRIS
-- Employee Management
-- Time Off
-- Attendance
-- Payroll
-- Workforce Planning
-- Onboarding
-- Goals
-- OKR
+Everything profiled for HiBob is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/bob/](https://apis.io/providers/bob/)** — or go straight to one of the APIs or properties below.
 
-## Timestamps
+### APIs (10)
 
-- **Created:** 2026-06-13
-- **Modified:** 2026-06-13
+- [Bob Public API](https://apis.io/apis/bob/public-api/) — REST API for managing employee data, time off, tasks, documents, and lifecycle events in HiBob. Authentication uses HTTP Basic with an API service user ID…
+- [Bob Webhooks](https://apis.io/apis/bob/webhooks/) — Webhooks for receiving real-time notifications of employee lifecycle and data change events from HiBob to drive downstream automation.
+- [HiBob Attendance API](https://apis.io/apis/bob/bob-attendance-api/) — The Attendance API from HiBob — 4 operation(s) for attendance.
+- [HiBob Documents API](https://apis.io/apis/bob/bob-documents-api/) — The Documents API from HiBob — 3 operation(s) for documents.
+- [HiBob Employee Tables API](https://apis.io/apis/bob/bob-employee-tables-api/) — The Employee Tables API from HiBob — 4 operation(s) for employee tables.
+- [HiBob Goals API](https://apis.io/apis/bob/bob-goals-api/) — The Goals API from HiBob — 3 operation(s) for goals.
+- [HiBob Hiring API](https://apis.io/apis/bob/bob-hiring-api/) — The Hiring API from HiBob — 4 operation(s) for hiring.
+- [HiBob Learning API](https://apis.io/apis/bob/bob-learning-api/) — The Learning API from HiBob — 2 operation(s) for learning.
+- [HiBob People API](https://apis.io/apis/bob/bob-people-api/) — The People API from HiBob — 4 operation(s) for people.
+- [HiBob Projects API](https://apis.io/apis/bob/bob-projects-api/) — The Projects API from HiBob — 3 operation(s) for projects.
 
-## APIs
+### Published properties
 
-### HiBob Bob API
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-REST API for the HiBob HR platform providing programmatic access to employee data, time off management, attendance, tasks, reports, documents, goals, job catalog, workforce planning, hiring, and learning modules. Authentication uses HTTP Basic Auth with Base64-encoded service user credentials.
+#### Security (1)
 
-- **Human URL:** [https://apidocs.hibob.com/docs/getting-started](https://apidocs.hibob.com/docs/getting-started)
-- **Base URL:** `https://api.hibob.com/v1`
+Authentication, trust centre, and vulnerability disclosure.
 
-#### Tags
+- [Bob Domain Security](https://apis.io/security/bob/bob-domain-security/)
 
-- HR
-- Employee Management
-- Time Off
-- Attendance
-- Workforce Planning
+#### Plans and pricing (1)
 
-#### Properties
+Published plans, tiers and prices.
 
-- [Documentation](https://apidocs.hibob.com/docs/getting-started)
-- [OpenAPI](https://apidocs.hibob.com/llms.txt) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Rate Limits](https://apidocs.hibob.com/reference/rate-limiting)
+- [Bob Plans Pricing](https://apis.io/plans/bob/bob-plans-pricing/)
 
-## Common Properties
+#### Rate limits (1)
+
+Published request limits.
+
+- [Bob Rate Limits](https://apis.io/rate-limits/bob/bob-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Bob Finops](https://apis.io/finops/bob/bob-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://www.hibob.com/)
 - [Documentation](https://apidocs.hibob.com/docs/getting-started)
-- [Git Hub Org](https://github.com/speakeasy-sdks/hibob)
-- [LinkedIn](https://www.linkedin.com/company/hibob)
-- [Blog](https://www.hibob.com/blog/)
 - [Pricing](https://www.hibob.com/pricing/)
-- [Status Page](https://status.hibob.io/)
-- [X (Twitter)](https://twitter.com/HiBob_HR)
-- [Plans](plans/bob-plans-pricing.yml)
-- [Rate Limits](rate-limits/bob-rate-limits.yml)
-- [Fin Ops](finops/bob-finops.yml)
+- [Blog](https://www.hibob.com/blog/)
+- [Status](https://status.hibob.io/)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 27.6** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 71.4 |
+| Contract quality | 45.3 |
+| Contract governance | 0.0 |
+| Operational transparency | 26.3 |
+| Developer ergonomics | 19.0 |
+| Access clarity | 18.4 |
+
+**Agent readiness 18.0** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 11.8** — Employment & Payroll
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/bob/](https://apis.io/providers/bob/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for HiBob: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/bob/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
